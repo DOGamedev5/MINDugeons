@@ -55,8 +55,6 @@ IntegerResolutionHandler="*res://addons/integer_resolution_handler/integer_resol
 
 [display]
 
-window/integer_resolution_handler/base_width=1024
-window/integer_resolution_handler/base_height=600
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 

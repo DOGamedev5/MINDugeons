@@ -94,7 +94,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -11.5 )
 frames = SubResource( 7 )
 animation = "idle"
-frame = 3
+frame = 4
 playing = true
 
 [node name="Shadow" type="Sprite" parent="."]
@@ -120,11 +120,6 @@ shape = SubResource( 8 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 0.4, 0.4 )
-limit_left = -224
-limit_top = -188
-limit_right = 224
-limit_bottom = 156
 smoothing_enabled = true
 smoothing_speed = 6.0
 editor_draw_limits = true

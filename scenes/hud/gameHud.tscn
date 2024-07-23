@@ -9,7 +9,6 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1024.0
 margin_bottom = 600.0
-rect_scale = Vector2( 2, 2 )
 type = 0
 maxValue = 100
 minValue = 0

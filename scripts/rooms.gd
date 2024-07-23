@@ -1,7 +1,7 @@
 extends Node2D
 
 onready var world = [
-	$barrs,
+	$characters/barrs,
 	$ground,
 	$hole,
 	$water
@@ -226,11 +226,12 @@ func set_map():
 
 func setCell(index, x, y, grid = Vector2.ZERO):
 	world[index].set_cell(x, y, 0, false, false, false, grid)
+	if index == BARR:
+		world[AIR].set_cell(x, y, 0)
 
 func updateBitmask(startV:Vector2, endV:Vector2):
 	for i in range(4):
-		if i != BARR:
-			world[i].update_bitmask_region(startV, endV)
+		world[i].update_bitmask_region(startV, endV)
 
 func has_color(list, color):
 	var keys = list.keys()
